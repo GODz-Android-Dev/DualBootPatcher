@@ -81,7 +81,7 @@
     cpu_temp_path:  /sys/class/power_supply/battery/batt_temp
     theme: portrait_hdpi
 
-- name: Micromax  2 A104
+- name: Micromax Fire 2 A104
   id: A104
   codenames:
     - A104
