@@ -80,3 +80,45 @@
     max_brightness: 255
     cpu_temp_path:  /sys/class/power_supply/battery/batt_temp
     theme: portrait_hdpi
+
+- name: Micromax  2 A104
+  id: A104
+  codenames:
+    - A104
+    - a104
+    - Micromax
+    - Micromax_A104
+    - micromax_a104
+    - Fire_2
+    - fire_2
+    - Fire2
+    - fire2
+  architecture: armeabi-v7a
+
+  block_devs:
+    base_dirs:
+      - /dev/block/platform/mtk-msdc.0/by-name
+    system:
+      - /dev/block/platform/mtk-msdc.0/by-name/system
+      - /dev/block/mmcblk0p5
+    cache:
+      - /dev/block/platform/mtk-msdc.0/by-name/cache
+      - /dev/block/mmcblk0p6
+    data:
+      - /dev/block/platform/mtk-msdc.0/by-name/userdata
+      - /dev/block/mmcblk0p7
+    boot:
+      - /dev/block/platform/mtk-msdc.0/by-name/boot
+      - /dev/bootimg
+    recovery:
+      - /dev/block/platform/mtk-msdc.0/by-name/recovery
+      - /dev/recovery
+
+  boot_ui:
+    supported: yes
+    graphics_backends:
+      - fbdev
+    brightness_path: /sys/class/leds/lcd-backlight/brightness
+    max_brightness: 255
+    cpu_temp_path:  /sys/class/power_supply/battery/batt_temp
+    theme: portrait_hdpi
